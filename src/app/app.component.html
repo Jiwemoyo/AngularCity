@@ -13,4 +13,10 @@
   <hr>
   <router-outlet></router-outlet>
 </section>
+<section class="dia-4">
+  <app-reaccion nombre="Alessandro" (mensaje)="recibiendoMensaje($event)"></app-reaccion>
+  @if (mensajeRecibido) {
+    <p>{{mensajeRecibido}}</p>
+  }
+</section>
 
