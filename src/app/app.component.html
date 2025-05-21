@@ -19,4 +19,17 @@
     <p>{{mensajeRecibido}}</p>
   }
 </section>
+<section class="dia-5">
+<h2>🧪 Laboratorio de Ciclo de Vida</h2>
 
+<button (click)="cambiarNombre()">Cambiar Nombre</button>
+<button (click)="destruirComponente()">
+  {{ mostrar ? 'Destruir componente' : 'Restaurar componente' }}
+</button>
+
+<hr>
+
+@if (mostrar) {
+  <app-estado [nombre]="usuario"></app-estado>
+}
+</section>
